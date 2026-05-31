@@ -1,0 +1,25 @@
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int bruteForce(int arr[],int n)
+{
+    int maxSum=INT_MIN;
+    for(int st=0; st<n; st++)
+    {
+        int currentSum=0;
+        for(int end=st; end<n; end++)
+        {
+            currentSum+=arr[end];
+            maxSum=max(currentSum,maxSum);
+        }
+    }
+    return maxSum;
+}
+int main()
+{
+    int n=5;
+    int arr[5]= {1,2,3,4,5};
+    int ans= bruteForce(arr,n);
+    cout<<"Maximum sum (bruce): "<<ans<<endl;
+    return 0;
+}
