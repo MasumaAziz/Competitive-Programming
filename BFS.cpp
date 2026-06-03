@@ -39,7 +39,8 @@ int main()
     
     cout<<"Enter number of edges: ";
     cin >> e;   // edges
-
+    
+    cout << "Enter edges (u v): "<<endl;
     for (int i = 0; i < e; i++)
     {
         int u, v;
