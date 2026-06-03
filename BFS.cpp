@@ -35,7 +35,8 @@ int main()
 {
     int n, e;
     cout<<"Enter number of nodes: ";
-    cin >> n;   // edges
+    cin >> n;   // nodes
+    
     cout<<"Enter number of edges: ";
     cin >> e;   // edges
 
